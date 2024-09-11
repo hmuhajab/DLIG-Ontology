@@ -6,6 +6,17 @@ This repository contains the OWL file of the developed DLIG Ontology.
 
 The DLIG Ontology is designed to model and capture geographic divisions and their hierarchical relationships within a country or region. It facilitates the integration of diverse Open Geo Data into a consistent geographic model..
 
+
+
+
+![DLIG-OS](https://github.com/user-attachments/assets/6a9d8e0b-f627-4b6d-a288-73f50802fe77)
+
+
+
+
+
+
+
 ## Files
 
 - **Abstract_DLIG.owl**: The OWL file containing the DLIG Ontology. This file includes the definitions, classes, properties, and axioms that constitute the ontology.
