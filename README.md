@@ -20,7 +20,7 @@ The DLIG Ontology is designed to model and capture geographic divisions and thei
 
 ## Files
 
-- **Abstract_DLIG.owl**: The OWL file containing the DLIG Ontology. This file includes the definitions, classes, properties, and axioms that constitute the ontology.
+- **DLIG_Ontology.owl**: The OWL file containing the DLIG Ontology. This file includes the definitions, classes, properties, and axioms that constitute the ontology.
 
 ## Usage
 
