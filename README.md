@@ -9,9 +9,10 @@ The DLIG Ontology is designed to model and capture geographic divisions and thei
 
 
 
-![DLIG-OS](https://github.com/user-attachments/assets/6a9d8e0b-f627-4b6d-a288-73f50802fe77)
 
 
+
+![Abstract_dlig](https://github.com/user-attachments/assets/c3f7e387-e503-4713-b22e-31de874d8c0f)
 
 
 
