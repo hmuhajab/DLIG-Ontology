@@ -23,6 +23,6 @@ The DLIG Ontology is designed to model and capture geographic divisions and thei
 
 ## Usage
 
-To use the DLIG Ontology, download the `Abstract_DLIG.owl` file and open it in an ontology editor such as [Protégé](https://protege.stanford.edu/).
+To use the DLIG Ontology, download the `DLIG_Ontology.owl` file and open it in an ontology editor such as [Protégé](https://protege.stanford.edu/).
 
 
