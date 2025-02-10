@@ -1,0 +1,579 @@
+{
+  "@context" : {
+    "MultiLineString" : {
+      "@id" : "http://www.opengis.net/ont/sf#MultiLineString"
+    },
+    "Clothoid" : {
+      "@id" : "http://www.opengis.net/ont/gml#Clothoid"
+    },
+    "AbstractGeometricPrimitive" : {
+      "@id" : "http://www.opengis.net/ont/gml#AbstractGeometricPrimitive"
+    },
+    "scopeNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#scopeNote"
+    },
+    "sfIntersects" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#sfIntersects",
+      "@type" : "@id"
+    },
+    "Line" : {
+      "@id" : "http://www.opengis.net/ont/sf#Line"
+    },
+    "sfCrosses" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#sfCrosses",
+      "@type" : "@id"
+    },
+    "member" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#member",
+      "@type" : "@id"
+    },
+    "semanticRelation" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#semanticRelation",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "example" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#example"
+    },
+    "nearest_W" : {
+      "@id" : "http://www.semanticweb.org/hn/dligs#nearest_W",
+      "@type" : "@id"
+    },
+    "hiddenLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#hiddenLabel"
+    },
+    "ehInside" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#ehInside",
+      "@type" : "@id"
+    },
+    "MultiSurface" : {
+      "@id" : "http://www.opengis.net/ont/sf#MultiSurface"
+    },
+    "Country" : {
+      "@id" : "http://www.semanticweb.org/hn/dligs#Country"
+    },
+    "belong_to" : {
+      "@id" : "http://www.semanticweb.org/hn/dligs#belong_to",
+      "@type" : "@id"
+    },
+    "proximity_directional" : {
+      "@id" : "http://www.semanticweb.org/hn/dligs#proximity_directional",
+      "@type" : "@id"
+    },
+    "CompositeCurve" : {
+      "@id" : "http://www.opengis.net/ont/gml#CompositeCurve"
+    },
+    "mappingRelation" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#mappingRelation",
+      "@type" : "@id"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "OrderedCollection" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#OrderedCollection"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "relatedMatch" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#relatedMatch",
+      "@type" : "@id"
+    },
+    "asWKT" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#asWKT",
+      "@type" : "http://www.opengis.net/ont/geosparql#wktLiteral"
+    },
+    "part_of" : {
+      "@id" : "http://www.semanticweb.org/hn/dligs#part_of",
+      "@type" : "@id"
+    },
+    "entityPositionX" : {
+      "@id" : "http://ontologydesignpatterns.org/opla-sd#entityPositionX"
+    },
+    "Geodesic" : {
+      "@id" : "http://www.opengis.net/ont/gml#Geodesic"
+    },
+    "Geometry" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
+    },
+    "Curve" : {
+      "@id" : "http://www.opengis.net/ont/gml#Curve"
+    },
+    "rcc8ec" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#rcc8ec",
+      "@type" : "@id"
+    },
+    "isSimple" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#isSimple",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "sfWithin" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#sfWithin",
+      "@type" : "@id"
+    },
+    "Shell" : {
+      "@id" : "http://www.opengis.net/ont/gml#Shell"
+    },
+    "nearest_N" : {
+      "@id" : "http://www.semanticweb.org/hn/dligs#nearest_N",
+      "@type" : "@id"
+    },
+    "Named_Entity" : {
+      "@id" : "http://www.semanticweb.org/hn/dligs#Named_Entity"
+    },
+    "long" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "altLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#altLabel"
+    },
+    "ehCoveredBy" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#ehCoveredBy",
+      "@type" : "@id"
+    },
+    "Feature" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "OS_id" : {
+      "@id" : "http://www.semanticweb.org/hn/dligs#OS_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "LineString" : {
+      "@id" : "http://www.opengis.net/ont/gml#LineString"
+    },
+    "narrower" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#narrower",
+      "@type" : "@id"
+    },
+    "historyNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#historyNote"
+    },
+    "AbstractParametricCurveSurface" : {
+      "@id" : "http://www.opengis.net/ont/gml#AbstractParametricCurveSurface"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "PolygonPatch" : {
+      "@id" : "http://www.opengis.net/ont/gml#PolygonPatch"
+    },
+    "related" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#related",
+      "@type" : "@id"
+    },
+    "GeometricComplex" : {
+      "@id" : "http://www.opengis.net/ont/gml#GeometricComplex"
+    },
+    "BSpline" : {
+      "@id" : "http://www.opengis.net/ont/gml#BSpline"
+    },
+    "rcc8po" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#rcc8po",
+      "@type" : "@id"
+    },
+    "AbstractGeometry" : {
+      "@id" : "http://www.opengis.net/ont/gml#AbstractGeometry"
+    },
+    "Division_1" : {
+      "@id" : "http://www.semanticweb.org/hn/dligs#Division_1"
+    },
+    "AbstractGriddedSurface" : {
+      "@id" : "http://www.opengis.net/ont/gml#AbstractGriddedSurface"
+    },
+    "coordinateDimension" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#coordinateDimension",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "LineStringSegment" : {
+      "@id" : "http://www.opengis.net/ont/gml#LineStringSegment"
+    },
+    "exactMatch" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+      "@type" : "@id"
+    },
+    "associated_with" : {
+      "@id" : "http://www.semanticweb.org/hn/dligs#associated_with",
+      "@type" : "@id"
+    },
+    "level_in_hierarchy" : {
+      "@id" : "http://www.semanticweb.org/hn/dligs#level_in_hierarchy",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Sphere" : {
+      "@id" : "http://www.opengis.net/ont/gml#Sphere"
+    },
+    "Triangle" : {
+      "@id" : "http://www.opengis.net/ont/sf#Triangle"
+    },
+    "note" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#note"
+    },
+    "closeMatch" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+      "@type" : "@id"
+    },
+    "Ring" : {
+      "@id" : "http://www.opengis.net/ont/gml#Ring"
+    },
+    "rcc8tpp" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#rcc8tpp",
+      "@type" : "@id"
+    },
+    "notation" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#notation"
+    },
+    "Divison_2" : {
+      "@id" : "http://www.semanticweb.org/hn/dligs#Divison_2"
+    },
+    "ehMeet" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#ehMeet",
+      "@type" : "@id"
+    },
+    "CircleByCenterPoint" : {
+      "@id" : "http://www.opengis.net/ont/gml#CircleByCenterPoint"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "AbstractSurfacePatch" : {
+      "@id" : "http://www.opengis.net/ont/gml#AbstractSurfacePatch"
+    },
+    "narrowMatch" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#narrowMatch",
+      "@type" : "@id"
+    },
+    "hasSerialization" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasSerialization",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "ArcByCenterPoint" : {
+      "@id" : "http://www.opengis.net/ont/gml#ArcByCenterPoint"
+    },
+    "GeodesicString" : {
+      "@id" : "http://www.opengis.net/ont/gml#GeodesicString"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "OrientableCurve" : {
+      "@id" : "http://www.opengis.net/ont/gml#OrientableCurve"
+    },
+    "nearest_E" : {
+      "@id" : "http://www.semanticweb.org/hn/dligs#nearest_E",
+      "@type" : "@id"
+    },
+    "AbstractCurveSegment" : {
+      "@id" : "http://www.opengis.net/ont/gml#AbstractCurveSegment"
+    },
+    "GeometryCollection" : {
+      "@id" : "http://www.opengis.net/ont/sf#GeometryCollection"
+    },
+    "asGML" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#asGML",
+      "@type" : "http://www.opengis.net/ont/geosparql#gmlLiteral"
+    },
+    "cardinal_direction" : {
+      "@id" : "http://www.semanticweb.org/hn/dligs#cardinal_direction",
+      "@type" : "@id"
+    },
+    "ArcByBulge" : {
+      "@id" : "http://www.opengis.net/ont/gml#ArcByBulge"
+    },
+    "prefixIRI" : {
+      "@id" : "http://data.bioontology.org/metadata/prefixIRI"
+    },
+    "rcc8tppi" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#rcc8tppi",
+      "@type" : "@id"
+    },
+    "memberList" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#memberList",
+      "@type" : "@id"
+    },
+    "rcc8ntpp" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#rcc8ntpp",
+      "@type" : "@id"
+    },
+    "Arc" : {
+      "@id" : "http://www.opengis.net/ont/gml#Arc"
+    },
+    "TIN" : {
+      "@id" : "http://www.opengis.net/ont/sf#TIN"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "Point" : {
+      "@id" : "http://www.opengis.net/ont/gml#Point"
+    },
+    "spatialDimension" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#spatialDimension",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "editorialNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#editorialNote"
+    },
+    "Cone" : {
+      "@id" : "http://www.opengis.net/ont/gml#Cone"
+    },
+    "narrowerTransitive" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#narrowerTransitive",
+      "@type" : "@id"
+    },
+    "ConceptScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    },
+    "OrientableSurface" : {
+      "@id" : "http://www.opengis.net/ont/gml#OrientableSurface"
+    },
+    "hasGeometry" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "@type" : "@id"
+    },
+    "Tin" : {
+      "@id" : "http://www.opengis.net/ont/gml#Tin"
+    },
+    "sfContains" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#sfContains",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "GeoHierarchy" : {
+      "@id" : "http://www.semanticweb.org/hn/dligs#GeoHierarchy"
+    },
+    "west" : {
+      "@id" : "http://www.semanticweb.org/hn/dligs#west",
+      "@type" : "@id"
+    },
+    "LinearRing" : {
+      "@id" : "http://www.opengis.net/ont/sf#LinearRing"
+    },
+    "GeoUnit" : {
+      "@id" : "http://www.semanticweb.org/hn/dligs#GeoUnit"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/elements/1.1/source"
+    },
+    "changeNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#changeNote"
+    },
+    "Bezier" : {
+      "@id" : "http://www.opengis.net/ont/gml#Bezier"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher"
+    },
+    "south" : {
+      "@id" : "http://www.semanticweb.org/hn/dligs#south",
+      "@type" : "@id"
+    },
+    "SpatialObject" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#SpatialObject"
+    },
+    "lat" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat"
+    },
+    "CompositeSolid" : {
+      "@id" : "http://www.opengis.net/ont/gml#CompositeSolid"
+    },
+    "List" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "broadMatch" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#broadMatch",
+      "@type" : "@id"
+    },
+    "topConceptOf" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
+      "@type" : "@id"
+    },
+    "OffsetCurve" : {
+      "@id" : "http://www.opengis.net/ont/gml#OffsetCurve"
+    },
+    "sfTouches" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#sfTouches",
+      "@type" : "@id"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "broaderTransitive" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#broaderTransitive",
+      "@type" : "@id"
+    },
+    "SplineCurve" : {
+      "@id" : "http://www.opengis.net/ont/gml#SplineCurve"
+    },
+    "Solid" : {
+      "@id" : "http://www.opengis.net/ont/gml#Solid"
+    },
+    "broader" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#broader",
+      "@type" : "@id"
+    },
+    "sfOverlaps" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#sfOverlaps",
+      "@type" : "@id"
+    },
+    "composed_of" : {
+      "@id" : "http://www.semanticweb.org/hn/dligs#composed_of",
+      "@type" : "@id"
+    },
+    "TriangulatedSurface" : {
+      "@id" : "http://www.opengis.net/ont/gml#TriangulatedSurface"
+    },
+    "isEmpty" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#isEmpty",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "MultiGeometry" : {
+      "@id" : "http://www.opengis.net/ont/gml#MultiGeometry"
+    },
+    "entityPosition" : {
+      "@id" : "http://ontologydesignpatterns.org/opla-sd#entityPosition"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2002/07/owl#sameAs",
+      "@type" : "@id"
+    },
+    "ArcStringByBulge" : {
+      "@id" : "http://www.opengis.net/ont/gml#ArcStringByBulge"
+    },
+    "Circle" : {
+      "@id" : "http://www.opengis.net/ont/gml#Circle"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "PolyhedralSurface" : {
+      "@id" : "http://www.opengis.net/ont/gml#PolyhedralSurface"
+    },
+    "Polygon" : {
+      "@id" : "http://www.opengis.net/ont/sf#Polygon"
+    },
+    "MultiPolygon" : {
+      "@id" : "http://www.opengis.net/ont/sf#MultiPolygon"
+    },
+    "CompositeSurface" : {
+      "@id" : "http://www.opengis.net/ont/gml#CompositeSurface"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/elements/1.1/contributor"
+    },
+    "Rectangle" : {
+      "@id" : "http://www.opengis.net/ont/gml#Rectangle"
+    },
+    "CubicSpline" : {
+      "@id" : "http://www.opengis.net/ont/gml#CubicSpline"
+    },
+    "nearest_S" : {
+      "@id" : "http://www.semanticweb.org/hn/dligs#nearest_S",
+      "@type" : "@id"
+    },
+    "dimension" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#dimension",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Composite" : {
+      "@id" : "http://www.opengis.net/ont/gml#Composite"
+    },
+    "PolynomialSpline" : {
+      "@id" : "http://www.opengis.net/ont/gml#PolynomialSpline"
+    },
+    "rcc8ntppi" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#rcc8ntppi",
+      "@type" : "@id"
+    },
+    "defaultGeometry" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#defaultGeometry",
+      "@type" : "@id"
+    },
+    "hasTopConcept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+      "@type" : "@id"
+    },
+    "prefLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "Cylinder" : {
+      "@id" : "http://www.opengis.net/ont/gml#Cylinder"
+    },
+    "Surface" : {
+      "@id" : "http://www.opengis.net/ont/gml#Surface"
+    },
+    "entityPositionY" : {
+      "@id" : "http://ontologydesignpatterns.org/opla-sd#entityPositionY"
+    },
+    "ehCovers" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#ehCovers",
+      "@type" : "@id"
+    },
+    "ehDisjoint" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#ehDisjoint",
+      "@type" : "@id"
+    },
+    "east" : {
+      "@id" : "http://www.semanticweb.org/hn/dligs#east",
+      "@type" : "@id"
+    },
+    "sfEquals" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#sfEquals",
+      "@type" : "@id"
+    },
+    "inScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "rcc8dc" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#rcc8dc",
+      "@type" : "@id"
+    },
+    "MultiCurve" : {
+      "@id" : "http://www.opengis.net/ont/sf#MultiCurve"
+    },
+    "Collection" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+    },
+    "MultiPoint" : {
+      "@id" : "http://www.opengis.net/ont/gml#MultiPoint"
+    },
+    "MultiSolid" : {
+      "@id" : "http://www.opengis.net/ont/gml#MultiSolid"
+    },
+    "north" : {
+      "@id" : "http://www.semanticweb.org/hn/dligs#north",
+      "@type" : "@id"
+    },
+    "ArcString" : {
+      "@id" : "http://www.opengis.net/ont/gml#ArcString"
+    }
+  }
+}
